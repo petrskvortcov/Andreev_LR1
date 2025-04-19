@@ -81,7 +81,12 @@ void findFirstDigit(int X) {
     }
 }
 
-void findNDigit(int X, int N)
-{
-// Реализация будет добавлена позже - ветка branch_fun_4
+// Функция для нахождения N-й цифры числа X
+void findNDigit(int X, int N) {
+    if (X != 0 && N > 0) {
+        int nDigit = (X / static_cast<int>(pow(10, N - 1))) % 10; // N-я цифра
+        cout << N << "-я цифра числа X: " << nDigit << endl;
+    } else {
+        cout << "Сначала введите трёхзначное число и цифру N.\n";
+    }
 }
