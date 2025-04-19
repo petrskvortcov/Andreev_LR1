@@ -1,5 +1,7 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
+
 
 // Объявление функций с пустыми телами
 void inputThreeDigitNumber(int &X);
