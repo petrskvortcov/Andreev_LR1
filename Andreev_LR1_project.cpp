@@ -71,10 +71,14 @@ void inputDigitN(int &N) {
     }
 }
 
-
-void findFirstDigit(int X)
-{
-// Реализация будет добавлена позже - ветка branch_fun_3
+// Функция для нахождения первой цифры числа X
+void findFirstDigit(int X) {
+    if (X != 0) {
+        int firstDigit = X / 100; // Первая цифра
+        cout << "Первая цифра числа X: " << firstDigit << endl;
+    } else {
+        cout << "Сначала введите трёхзначное число.\n";
+    }
 }
 
 void findNDigit(int X, int N)
