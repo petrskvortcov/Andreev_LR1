@@ -61,11 +61,16 @@ void inputThreeDigitNumber(int &X)
     }
 }
 
-
-void inputDigitN(int &N)
-{
-// Реализация будет добавлена позже - ветка branch_fun_2
+// Функция для ввода цифры N
+void inputDigitN(int &N) {
+    cout << "Введите цифру N (меньше числа разрядов числа X): ";
+    cin >> N;
+    if (N < 1 || N > 3) {
+        cout << "Ошибка: N должно быть в диапазоне от 1 до 3.\n";
+        N = 0; // Сбрасывание значения
+    }
 }
+
 
 void findFirstDigit(int X)
 {
